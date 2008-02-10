@@ -39,10 +39,10 @@ my $build = $build_pkg->new(
     create_readme       => 1,
     dist_author         => 'Adam Prime (adam.prime@utoronto.ca)',
     requires            => {
-        'mod_perl2'                => 2.03,
+        'mod_perl2'                => 2,
 	'Apache2::Request'         => 2.07,
 	'Template'                 => 2.18,
-	'Apache2::DirBasedHandler' => 0.01,
+	'Apache2::DirBasedHandler' => 0.02,
     },
     build_requires      => $configure_requires,
 #    'meta_add'          => {

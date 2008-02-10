@@ -49,10 +49,11 @@ WriteMakefile(
     'VERSION_FROM'      => 'lib/Apache2/DirBasedHandler/TT.pm',
     'AUTHOR'            => 'Adam Prime (adam.prime@utoronto.ca)',
     'PREREQ_PM'         => {
-        'mod_perl2'             => 2.03,
-        'Apache2::Request'      => 2.08,
-        'Template'              => 2.18,
+        'mod_perl2'                 => 2,
+        'Apache2::Request'          => 2.08,
+        'Template'                  => 2.18,
         # really a configuration requirement, but EU::MM doesn't support that
-        'Apache::Test'          => 1.12,
+        'Apache::Test'              => 1.12,
+        'Apache2::DirBasedHandler'  => 0.02,
         },
     );
