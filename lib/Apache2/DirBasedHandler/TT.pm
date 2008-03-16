@@ -128,7 +128,6 @@ sub process_template {
     my $self = shift;
     my ($r,$tt,$vars,$template_name,$content_type) = @_;
     my $page_out;
-    $r->warn(qq[process]);
     if (!$tt->process($template_name, $vars, \$page_out)) {
         $r->log_error($template_name . qq[ ] . $tt->error);
         return Apache2::Const::SERVER_ERROR;
