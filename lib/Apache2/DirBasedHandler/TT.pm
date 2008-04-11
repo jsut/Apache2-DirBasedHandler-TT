@@ -7,7 +7,7 @@ our @ISA = qw(Apache2::DirBasedHandler);
 
 use Template;
 our $tt;
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 =head1 NAME
 
