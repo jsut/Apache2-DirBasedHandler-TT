@@ -74,7 +74,8 @@ Apache2::DirBasedHandler::TT - TT hooked into DirBasedHandler
 
 =head1 DESCRIPTION
 
-hi there
+Apache2::DirBasedHandler::TT, is an subclass of Apache2::DirBasedHandler with modified
+to allow easy use of Template Toolkit templates for content generation.
 
 =head2 init
 
@@ -135,5 +136,13 @@ sub process_template {
 
     return (Apache2::Const::OK,$page_out,$content_type);
 }
+
+1;
+
+=head1 AUTHOR AND COPYRIGHT
+
+Copyright 2008, Adam Prime (adam.prime@utoronto.ca) 
+
+This software is free. It is licensed under the same terms as Perl itself.
 
 
