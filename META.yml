@@ -1,6 +1,6 @@
 ---
 name: Apache2-DirBasedHandler-TT
-version: 0.01
+version: 0.02
 author:
   - Adam Prime (adam.prime@utoronto.ca)
 abstract: TT hooked into DirBasedHandler
@@ -17,7 +17,7 @@ build_requires:
 provides:
   Apache2::DirBasedHandler::TT:
     file: lib/Apache2/DirBasedHandler/TT.pm
-    version: 0.01
+    version: 0.02
 generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

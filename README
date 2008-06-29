@@ -60,7 +60,9 @@ SYNOPSIS
       1;
 
 DESCRIPTION
-    hi there
+    Apache2::DirBasedHandler::TT, is an subclass of Apache2::DirBasedHandler
+    with modified to allow easy use of Template Toolkit templates for
+    content generation.
 
   init
     "init" calls get_tt to get the template object, and stuffs it into the
@@ -76,4 +78,10 @@ DESCRIPTION
     "process_template" is a helper function to generate a page based using
     the template object, variables, and template passed in. It sets the
     content_type of the response to the value of the fifth argument.
+
+AUTHOR AND COPYRIGHT
+    Copyright 2008, Adam Prime (adam.prime@utoronto.ca)
+
+    This software is free. It is licensed under the same terms as Perl
+    itself.
 
