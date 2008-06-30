@@ -54,6 +54,6 @@ WriteMakefile(
         'Template'                  => 2.18,
         # really a configuration requirement, but EU::MM doesn't support that
         'Apache::Test'              => 1.12,
-        'Apache2::DirBasedHandler'  => 0.02,
+        'Apache2::DirBasedHandler'  => 0.03,
         },
     );

@@ -7,7 +7,7 @@ our @ISA = qw(Apache2::DirBasedHandler::TT);
 
 use Apache2::Const -compile => qw(:common);
 
-sub index {
+sub root_index {
     my $self = shift;
     my ($r,$uri_args,$args) = @_;
 

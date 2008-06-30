@@ -42,7 +42,7 @@ my $build = $build_pkg->new(
         'mod_perl2'                => 2,
 	'Apache2::Request'         => 2.07,
 	'Template'                 => 2.18,
-	'Apache2::DirBasedHandler' => 0.02,
+	'Apache2::DirBasedHandler' => 0.03,
     },
     build_requires      => $configure_requires,
 #    'meta_add'          => {
