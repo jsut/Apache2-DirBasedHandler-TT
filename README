@@ -1,6 +1,9 @@
 NAME
     Apache2::DirBasedHandler::TT - TT hooked into DirBasedHandler
 
+VERSION
+    This documentation refers to <Apache2::DirBasedHandler::TT> version 0.03
+
 SYNOPSIS
       package My::Thingy;
 
@@ -11,7 +14,7 @@ SYNOPSIS
 
       use Apache2::Const -compile => qw(:common);
 
-      sub index {
+      sub root_index {
           my $self = shift;
           my ($r,$uri_args,$args) = @_;
 
@@ -79,9 +82,30 @@ DESCRIPTION
     the template object, variables, and template passed in. It sets the
     content_type of the response to the value of the fifth argument.
 
-AUTHOR AND COPYRIGHT
-    Copyright 2008, Adam Prime (adam.prime@utoronto.ca)
+DEPENDENCIES
+    This module requires modperl 2 (http://perl.apache.org), and libapreq
+    (http://httpd.apache.org/apreq/) which must be installed seperately. It
+    also depends on Apache2::DirBasedHandler
 
-    This software is free. It is licensed under the same terms as Perl
-    itself.
+INCOMPATIBILITIES
+    There are no known incompatibilities for this module.
+
+BUGS AND LIMITATIONS
+    There are no known bugs in this module. Please report any problems
+    through
+
+    http://rt.cpan.org/Public/Dist/Display.html?Name=Apache2-DirBasedHandler
+    -TT
+
+AUTHOR
+    Adam Prime (adam.prime@utoronto.ca)
+
+LICENSE AND COPYRIGHT
+    Copyright (c) 2008 by Adam Prime (adam.prime@utoronto.ca). All rights
+    reserved. This program is free software; you can redistribute it and/or
+    modify it under the same terms as Perl itself. See perlartistic.
+
+    This module is distributed in the hope that it will be useful, but
+    WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 

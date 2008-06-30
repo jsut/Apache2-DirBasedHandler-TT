@@ -11,3 +11,4 @@ t/My/Thingy.pm
 t/pod_coverage.t
 README
 META.yml
+Changes
